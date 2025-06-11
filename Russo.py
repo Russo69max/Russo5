@@ -1,15 +1,20 @@
-nome = input("Qual seu nome?")
-nota = float(input("Qual é sua nota?"))
-nota2 = float(input("Qual é sua nota2?"))
-nota3 = float(input("Qual é sua nota3?"))
-media = (nota+nota2+nota3)/3
-if media >= 7:
-    print(f"{nome} está nota boa")
-elif media >= 5:
-    print(f"{nome} está nota mediana" )
-else :
-    print(f"{nome } está com nota pessima seu burro")
+nome =  input("Qual o seu nome? ")
+peso = float(input("Qual é seu peso em quilos?"))
+altura = float(input("Qual a sua altura?"))
 
+IMC = peso / (altura * altura)
+if peso <= 18.5:
+    print(f"{nome} vc é um Frango")
+elif IMC <= 24.9:
+    print(f"{nome} Está com peso normal")
+elif IMC <= 29.9:
+    print(f"{nome} Está com Sobre peso")
+elif IMC <= 34.9:
+    print(f"{nome} Está com obesidade Grau1!")
+elif IMC <= 39.9:
+    print(f"{nome} Está com obesidade Grau2!")
+else:
+    print(f"{nome} Para de comer doritos")
 
 
 
